@@ -3,25 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Topologia De Rede</title>
     <link rel="stylesheet" href="estilo.css">
+
 </head>
 <body>
     <header id="topo">
     <nav>
         <a class="botaominimalista" href="index.html">Introdução</a>&nbsp;&nbsp;
-        <a class="botaominimalista" href="importancia.html">Importância</a>&nbsp;&nbsp;
         <a class="botaominimalista" href="arquitetura.html">Arquiteturas</a>&nbsp;&nbsp;
         <a class="botaominimalista" href="topologia.html">Topologias</a>&nbsp;&nbsp;
         <a class="botaominimalista" href="tiposderede.html">Tipos de Rede</a>
     </nav>
     
     </header>
-    <main>
+    <main id="meio">
+        <h1 id="topo">Topologia de Rede</h1>
+        
+        <div id="introd_topo">
+            <h2>O que são Topologia de Redes?</h2>
+            <p>A disposição de nós e links é chamada de topologia de rede. Eles podem ser configurados de
+            maneiras diferentes para obter resultados distintos. Alguns tipos de topologias de rede são:</p>
+        </div>
+        
+        <div class="div_centralizadora">
+            <div>
+                <h2>Topologia de Barramento</h2>
+                <p>Cada nó está vinculado a apenas um outro nó. A transmissão de dados pelas conexões de
+                rede ocorre em uma direção.</p>
+            </div>
+            <div>
+                <img src="img/topologiab.jpg" alt="Topologia de Barramento">
+            </div>
+        </div>
 
+        <div class="div_centralizadora">
+            <div>
+                <h2>Topologia em anel</h2>
+                <p>Cada nó está vinculado a dois outros nós, formando um anel. Os dados podem fluir
+                bidirecionalmente. No entanto, a falha de um único nó pode desativar toda a rede.</p>
+            </div>
+            <div>
+                <img src="img/topologiaa.png" alt="Topologia em Anel">
+            </div>
+        </div>
+
+        <div class="div_centralizadora">
+            <div>
+                <h2>Topologia em estrela</h2>
+                <p>Um nó de servidor central está vinculado a vários dispositivos de rede do cliente. Essa
+            topologia tem melhor performance, pois os dados não precisam passar por cada nó. Eles
+            também são mais confiáveis.</p>
+            </div>
+            <div>
+                <img src="img/topologiae.png" alt="Topologia em Anel">
+            </div>
+        </div>
+
+        <div class="div_centralizadora">
+            <div>
+                <h2>Topologia em malha</h2>
+                <p>Cada nó está conectado a muitos outros nós. Em uma topologia em malha completa, cada nó
+                está conectado a todos os outros nós da rede.</p>
+            </div>
+            <div>
+                <img src="img/topologiam.png" alt="Topologia em Anel">
+            </div>
+        </div>
+        
+        
+
+        <h2></h2>
     </main>
     <footer>
-        
+        <h3>Fatec Santana de Parnaíba</h3>
+        <h4>2026</h4>
     </footer>
 </body>
 </html>

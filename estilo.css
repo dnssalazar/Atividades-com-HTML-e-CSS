@@ -1,23 +1,32 @@
+/*CÓDIGOs PADRÃO*/
 body{
     margin: 0px;
     background-color: #f1f1f1;
     padding: 0px;
 }
+
 h1{
     font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
     font-size: 35px;
     color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 45px;
 }
+
 h2{
     margin-bottom: 15px;
     font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
     font-size: 30px;
 }
+
 h3{
     font-size: 25px;
+    margin-left: 25px;
+    margin-bottom: 15px;
 }
+
 nav{
     top: 0;
     left: 0;
@@ -28,62 +37,27 @@ nav{
     width: 100%; 
     background-color: #f1f1f1;
 }
+
+footer{
+    text-align: center;
+    margin-top: 45px;
+}
+
 a{
     text-decoration: none;
-    margin-right: 20px;   
+    margin: 0 15px;   
 }
-p{
-    font-size: 22px;
-}
-ul{
-    font-size: 22px;
-    text-align: left;
-    padding-left: 18px;
-}
+
 a:hover{
     text-decoration: underline;
     color: white;
     background-color: black;
-}   
+} 
 
-#imagemheader {
-    display: block;
-    width: 80%;
-    height: 350px;
-}
-#topo{
-    padding-top: 10px;
-}
-#meio {
-    padding: 15px;
-}
-.bloco_conteudo{
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    padding: 15px;
-    gap: 60px;
-    border: 5px solid rgba(111, 111, 111, 0.507);
-    border-radius: 25px;
-    background-color: rgba(146, 146, 146, 0.232);
-}
-.imagem_direita{
-    text-align: right;
-}
-.imagemquadrada{
-    width: 450px;
-    height: 380px;
-}
-.botaominimalista{  
-  /* Remove estilos padrões do navegador */
-  background: transparent;
-  cursor: pointer;
-  
-  /* Design Minimalista: bordas finas e bastante espaçamento interno */
+.botaominimalista{
   border: 1px solid #000000;
   padding: 12px 32px;
   
-  /* Tipografia limpa */
   font-family: sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -92,9 +66,104 @@ a:hover{
   color: #1a1a1a;
   
   /* Transição suave para o efeito de passar o mouse */
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
+p{
+    font-size: 22px;
+}
+
+/*Imagens TOPOLOGIA*/
+.div_centralizadora img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 450px;
+    border-radius: 5%;
+}
+
+
+/*DIVs centralizada CONTEUDO*/
+.div_centralizadora{
+    text-align: center;
+    margin-top: 45px;
+}
+
+.div_centralizadora p{
+    margin-inline: 25px;
+}
+
+ul{
+    font-size: 22px;
+    text-align: left;
+    padding-left: 18px;
+}
+  
+
+#imagemheader {
+    display: block;
+    width: 80%;
+    height: 350px;
+}
+
+/*Main Começo*/
 #topo{
-    margin-top: 30px;
+    margin-inline: 15px;
+    margin-top: 40px;
+    padding-top: 0;
+}
+
+#introd_topo{
+    margin-inline: 15px;
+}
+#meio {
+    padding: 25px;
+    margin-inline: 15px;
+}
+.bloco_simples_conteudo{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 105px; 
+    margin-left: 15px;
+}
+.bloco_simples_contrario{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 15px;
+    gap: 105px; 
+    margin-left: 15px;
+}
+.conteudo_esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.conteudo_direita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 25px;
+}
+.bloco_conteudo{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 60px;
+    border: 2px solid rgba(84, 84, 84, 0.507);
+    border-radius: 15px;
+    background-color: rgba(135, 135, 135, 0.134);
+}
+.imagem_direita{
+    text-align: right;
+}
+.imagemquadrada{
+    width: 450px;
+    height: 380px;
+    border-radius: 15px;
 }
